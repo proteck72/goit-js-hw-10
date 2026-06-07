@@ -1,0 +1,84 @@
+.controls {
+  display: flex;
+  gap: 8px;
+  margin: 24px 0 32px 24px;
+  align-items: center;
+}
+
+#datetime-picker {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+  width: 272px;
+  color: #2e2f42;
+  box-sizing: border-box;
+}
+
+#datetime-picker:hover {
+  border-color: #000000;
+}
+
+#datetime-picker:focus {
+  border-color: #4e75ff;
+}
+
+/* Стилізація кнопки Start */
+button[data-start] {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 8px 16px;
+  background-color: #4e75ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button[data-start]:hover:not(:disabled) {
+  background-color: #6c8cff;
+}
+
+button[data-start]:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+  cursor: not-allowed;
+}
+
+.timer {
+  display: flex;
+  gap: 24px;
+  margin-left: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+}
+
+.value {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #2e2f42;
+  letter-spacing: 0.04em;
+}
+
+.label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.33;
+  text-transform: uppercase;
+  color: #2e2f42;
+  margin-top: 4px;
+}

@@ -1,0 +1,70 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 360px;
+  margin: 32px 0 0 24px;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #2e2f42;
+}
+
+.form-label input {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+}
+
+.form-label input:focus {
+  border-color: #4e75ff;
+}
+
+.form-fieldset {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-fieldset legend {
+  padding: 0 8px;
+  color: #2e2f42;
+  font-size: 14px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 16px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 16px;
+  background-color: #4e75ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-btn:hover {
+  background-color: #6c8cff;
+}
